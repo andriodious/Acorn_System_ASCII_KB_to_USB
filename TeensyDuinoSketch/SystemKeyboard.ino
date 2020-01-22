@@ -286,7 +286,7 @@ void loop() {
       bitWrite(keyASCII, 6, digitalRead(DATA6));
       bitWrite(keyASCII, 7, 0);
       keyCode = keyASCII;
-      //Keyboard.print(keyCode);
+      
       // See if we need to preserve raw key-press
       if (!rawMode) {
         keyModifier = translateKey(&keyCode);
@@ -307,7 +307,7 @@ void loop() {
       // Shift then key
       Keyboard.set_modifier(MODIFIERKEY_SHIFT);
       Keyboard.send_now();
-      Keyboard.set_key1((char)keyCode);
+      Keyboard.set_key1(keyCode);
       Keyboard.send_now();
       // Release
       Keyboard.set_modifier(0);
