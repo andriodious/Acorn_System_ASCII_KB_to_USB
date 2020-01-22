@@ -13,7 +13,7 @@
 // -- Dependencies: 
 // --
 // -- Revision: 
-// -- Revision 0.01 - File Created
+// -- Revision 0.02 - Tidy up code and correct pin assignments -- functionally equivalent
 // -- Additional Comments: 
 // --
 // ----------------------------------------------------------------------------------
